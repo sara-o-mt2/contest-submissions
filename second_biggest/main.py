@@ -28,16 +28,11 @@ def get_second_biggest_num(num_list):
     Arguments:
         num_list {list}
     """
-    remove_max_list = num_list
+    max_num = get_max_num(num_list)
+    remove_max_list = [n for n in num_list if n != max_num]
+    second_biggest_num = get_max_num(remove_max_list)
 
-    for i in range(2):
-        max_num = get_max_num(remove_max_list)
-
-        remove_max_list = [n for n in remove_max_list if n != max_num]
-
-    result = max_num
-
-    return result
+    return second_biggest_num
 
 
 def main():
