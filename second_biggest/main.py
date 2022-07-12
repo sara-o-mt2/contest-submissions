@@ -16,9 +16,7 @@ def get_max_num(num_list):
         if num <= i:
             num = i
 
-    result = num
-
-    return result
+    return num
 
 
 def get_second_biggest_num(num_list):
