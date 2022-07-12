@@ -37,8 +37,14 @@ def get_second_biggest_num(num_list):
 
     result = max_num
 
-    print(result)
-    # 5
+    return result
 
 
-get_second_biggest_num([3, 5, 4, 6, 1, 1, 5, 6])
+def main():
+    """
+    main
+    """
+    print(get_second_biggest_num([3, 5, 4, 6, 1, 1, 5, 6]))
+    # 想定解: 5
+
+main()
